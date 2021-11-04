@@ -1,0 +1,42 @@
+@use "derived";
+
+@mixin replit-theme {
+  &.replit-ui-theme-root {
+    --background-root: #{derived.$background-root};
+    --background-default: #{derived.$background-default};
+    --background-higher: #{derived.$background-higher};
+    --background-highest: #{derived.$background-highest};
+    --background-overlay: #{derived.$background-overlay};
+
+    --foreground-default: #{derived.$foreground-default};
+    --foreground-dimmer: #{derived.$foreground-dimmer};
+    --foreground-dimmest: #{derived.$foreground-dimmest};
+
+    --outline-default: #{derived.$outline-default};
+    --outline-default-25: #{derived.$outline-default-25};
+    --outline-dimmer: #{derived.$outline-dimmer};
+    --outline-dimmest: #{derived.$outline-dimmest};
+
+    --accent-primary-strongest: #{derived.$primary-strongest};
+    --accent-primary-stronger: #{derived.$primary-stronger};
+    -webkit---accent-primary-default: #{derived.$primary-default};
+    --accent-primary-default: #{derived.$primary-default};
+    --accent-primary-dimmer: #{derived.$primary-dimmer};
+    -webkit---accent-primary-dimmest: #{derived.$primary-dimmest};
+    --accent-primary-dimmest: #{derived.$primary-dimmest};
+
+    --accent-positive-strongest: #{derived.$positive-strongest};
+    --accent-positive-stronger: #{derived.$positive-stronger};
+    --accent-positive-default: #{derived.$positive-default};
+    -webkit---accent-positive-dimmer: #{derived.$positive-dimmer};
+    --accent-positive-dimmer: #{derived.$positive-dimmer};
+    --accent-positive-dimmest: #{derived.$positive-dimmest};
+
+    --accent-negative-strongest: #{derived.$negative-strongest};
+    --accent-negative-stronger: #{derived.$negative-stronger};
+    --accent-negative-default: #{derived.$negative-default};
+    -webkit---accent-negative-dimmer: #{derived.$negative-dimmer};
+    --accent-negative-dimmer: #{derived.$negative-dimmer};
+    --accent-negative-dimmest: #{derived.$negative-dimmest};
+  }
+}
