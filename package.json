@@ -1,0 +1,23 @@
+{
+  "name": "custom-replit-theme",
+  "version": "1.0.0",
+  "description": "Template for custom Replit themes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo nope"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BD103/Custom-Replit-Theme.git"
+  },
+  "keywords": [
+    "sass",
+    "replit"
+  ],
+  "author": "BD103",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BD103/Custom-Replit-Theme/issues"
+  },
+  "homepage": "https://github.com/BD103/Custom-Replit-Theme#readme"
+}
