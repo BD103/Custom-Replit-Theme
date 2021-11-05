@@ -6,7 +6,8 @@
   $outline,
   $primary,
   $positive,
-  $negative
+  $negative,
+  $reverse: false
 ) {
   // Derived
   $background-root: color.adjust($background, $lightness: -10%);
@@ -41,6 +42,26 @@
   $negative-default: $negative;
   $negative-dimmer: color.adjust($negative, $lightness: -10%);
   $negative-dimmest: color.adjust($negative, $lightness: -30%);
+
+  @if $reverse {
+    $outline-dimmer: color.adjust($outline, $lightness: 10%);
+    $outline-dimmest: color.adjust($outline, $lightness: 30%);
+
+    $primary-strongest: color.adjust($primary, $lightness: -30%);
+    $primary-stronger: color.adjust($primary, $lightness: -10%);
+    $primary-dimmer: color.adjust($primary, $lightness: 10%);
+    $primary-dimmest: color.adjust($primary, $lightness: 30%);
+
+    $positive-strongest: color.adjust($positive, $lightness: -30%);
+    $positive-stronger: color.adjust($positive, $lightness: -10%);
+    $positive-dimmer: color.adjust($positive, $lightness: 10%);
+    $positive-dimmest: color.adjust($positive, $lightness: 30%);
+
+    $negative-strongest: color.adjust($negative, $lightness: -30%);
+    $negative-stronger: color.adjust($negative, $lightness: -10%);
+    $negative-dimmer: color.adjust($negative, $lightness: 10%);
+    $negative-dimmest: color.adjust($negative, $lightness: 30%);
+  }
 
   &.replit-ui-theme-root {
     --background-root: #{$background-root};
