@@ -1,13 +1,9 @@
 @use "mixins";
 
-// Available selectors include:
-// - .light
-// - .dark
-// - .spooky (may be removed in the future)
-//
-// You can also use your own class name
-// and implement theme changing yourself.
+.light {
+  @include mixins.light-replit-theme();
+}
 
 .dark {
-  @include mixins.replit-theme;
+  @include mixins.dark-replit-theme();
 }

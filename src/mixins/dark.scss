@@ -1,0 +1,19 @@
+@use "base";
+
+@mixin dark-replit-theme(
+  $background: #1c2333,
+  $foreground: #f5f9fc,
+  $outline: #70788c,
+  $primary: #0099ff,
+  $positive: #2fc448,
+  $negative: #f23f3f
+) {
+  @include base.replit-theme(
+    $background,
+    $foreground,
+    $outline,
+    $primary,
+    $positive,
+    $negative
+  );
+}

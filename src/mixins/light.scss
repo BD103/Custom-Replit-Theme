@@ -1,0 +1,19 @@
+@use "base";
+
+@mixin light-replit-theme(
+  $background: #fcfcfc,
+  $foreground: #07080a,
+  $outline: #afb1b3,
+  $primary: #0099ff,
+  $positive: #2fc448,
+  $negative: #f23f3f
+) {
+  @include base.replit-theme(
+    $background,
+    $foreground,
+    $outline,
+    $primary,
+    $positive,
+    $negative
+  );
+}
