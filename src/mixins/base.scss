@@ -4,9 +4,20 @@
   $background,
   $foreground,
   $outline,
-  $primary,
-  $positive,
-  $negative,
+  $primary: #0099ff,
+  $positive: #2fc448,
+  $negative: #f23f3f,
+  $red: #e50000,
+  $orange: #d96d00,
+  $yellow: #ccad14,
+  $green: #36b24a,
+  $teal: #3db4cc,
+  $blue: #2e8ae5,
+  $blurple: #7559ff,
+  $purple: #a64dff,
+  $magenta: #e55ae5,
+  $pink: #e545b0,
+  $grey: #808080,
   $reverse: false
 ) {
   // Derived
@@ -43,6 +54,72 @@
   $negative-dimmer: color.adjust($negative, $lightness: -10%);
   $negative-dimmest: color.adjust($negative, $lightness: -30%);
 
+  $red-strongest: color.adjust($red, $lightness: 30%);
+  $red-stronger: color.adjust($red, $lightness: 10%);
+  $red-default: $red;
+  $red-dimmer: color.adjust($red, $lightness: -10%);
+  $red-dimmest: color.adjust($red, $lightness: -30%);
+
+  $orange-strongest: color.adjust($orange, $lightness: 30%);
+  $orange-stronger: color.adjust($orange, $lightness: 10%);
+  $orange-default: $orange;
+  $orange-dimmer: color.adjust($orange, $lightness: -10%);
+  $orange-dimmest: color.adjust($orange, $lightness: -30%);
+
+  $yellow-strongest: color.adjust($yellow, $lightness: 30%);
+  $yellow-stronger: color.adjust($yellow, $lightness: 10%);
+  $yellow-default: $yellow;
+  $yellow-dimmer: color.adjust($yellow, $lightness: -10%);
+  $yellow-dimmest: color.adjust($yellow, $lightness: -30%);
+
+  $green-strongest: color.adjust($green, $lightness: 30%);
+  $green-stronger: color.adjust($green, $lightness: 10%);
+  $green-default: $green;
+  $green-dimmer: color.adjust($green, $lightness: -10%);
+  $green-dimmest: color.adjust($green, $lightness: -30%);
+
+  $teal-strongest: color.adjust($teal, $lightness: 30%);
+  $teal-stronger: color.adjust($teal, $lightness: 10%);
+  $teal-default: $teal;
+  $teal-dimmer: color.adjust($teal, $lightness: -10%);
+  $teal-dimmest: color.adjust($teal, $lightness: -30%);
+
+  $blue-strongest: color.adjust($blue, $lightness: 30%);
+  $blue-stronger: color.adjust($blue, $lightness: 10%);
+  $blue-default: $blue;
+  $blue-dimmer: color.adjust($blue, $lightness: -10%);
+  $blue-dimmest: color.adjust($blue, $lightness: -30%);
+
+  $blurple-strongest: color.adjust($blurple, $lightness: 30%);
+  $blurple-stronger: color.adjust($blurple, $lightness: 10%);
+  $blurple-default: $blurple;
+  $blurple-dimmer: color.adjust($blurple, $lightness: -10%);
+  $blurple-dimmest: color.adjust($blurple, $lightness: -30%);
+
+  $purple-strongest: color.adjust($purple, $lightness: 30%);
+  $purple-stronger: color.adjust($purple, $lightness: 10%);
+  $purple-default: $purple;
+  $purple-dimmer: color.adjust($purple, $lightness: -10%);
+  $purple-dimmest: color.adjust($purple, $lightness: -30%);
+
+  $magenta-strongest: color.adjust($magenta, $lightness: 30%);
+  $magenta-stronger: color.adjust($magenta, $lightness: 10%);
+  $magenta-default: $magenta;
+  $magenta-dimmer: color.adjust($magenta, $lightness: -10%);
+  $magenta-dimmest: color.adjust($magenta, $lightness: -30%);
+
+  $pink-strongest: color.adjust($pink, $lightness: 30%);
+  $pink-stronger: color.adjust($pink, $lightness: 10%);
+  $pink-default: $pink;
+  $pink-dimmer: color.adjust($pink, $lightness: -10%);
+  $pink-dimmest: color.adjust($pink, $lightness: -30%);
+
+  $grey-strongest: color.adjust($grey, $lightness: 30%);
+  $grey-stronger: color.adjust($grey, $lightness: 10%);
+  $grey-default: $grey;
+  $grey-dimmer: color.adjust($grey, $lightness: -10%);
+  $grey-dimmest: color.adjust($grey, $lightness: -30%);
+
   @if $reverse {
     $outline-dimmer: color.adjust($outline, $lightness: 10%);
     $outline-dimmest: color.adjust($outline, $lightness: 30%);
@@ -61,6 +138,61 @@
     $negative-stronger: color.adjust($negative, $lightness: -10%);
     $negative-dimmer: color.adjust($negative, $lightness: 10%);
     $negative-dimmest: color.adjust($negative, $lightness: 30%);
+
+    $red-strongest: color.adjust($red, $lightness: -30%);
+    $red-stronger: color.adjust($red, $lightness: -10%);
+    $red-dimmer: color.adjust($red, $lightness: 10%);
+    $red-dimmest: color.adjust($red, $lightness: 30%);
+
+    $orange-strongest: color.adjust($orange, $lightness: -30%);
+    $orange-stronger: color.adjust($orange, $lightness: -10%);
+    $orange-dimmer: color.adjust($orange, $lightness: 10%);
+    $orange-dimmest: color.adjust($orange, $lightness: 30%);
+
+    $yellow-strongest: color.adjust($yellow, $lightness: -30%);
+    $yellow-stronger: color.adjust($yellow, $lightness: -10%);
+    $yellow-dimmer: color.adjust($yellow, $lightness: 10%);
+    $yellow-dimmest: color.adjust($yellow, $lightness: 30%);
+
+    $green-strongest: color.adjust($green, $lightness: -30%);
+    $green-stronger: color.adjust($green, $lightness: -10%);
+    $green-dimmer: color.adjust($green, $lightness: 10%);
+    $green-dimmest: color.adjust($green, $lightness: 30%);
+
+    $teal-strongest: color.adjust($teal, $lightness: -30%);
+    $teal-stronger: color.adjust($teal, $lightness: -10%);
+    $teal-dimmer: color.adjust($teal, $lightness: 10%);
+    $teal-dimmest: color.adjust($teal, $lightness: 30%);
+
+    $blue-strongest: color.adjust($blue, $lightness: -30%);
+    $blue-stronger: color.adjust($blue, $lightness: -10%);
+    $blue-dimmer: color.adjust($blue, $lightness: 10%);
+    $blue-dimmest: color.adjust($blue, $lightness: 30%);
+
+    $blurple-strongest: color.adjust($blurple, $lightness: -30%);
+    $blurple-stronger: color.adjust($blurple, $lightness: -10%);
+    $blurple-dimmer: color.adjust($blurple, $lightness: 10%);
+    $blurple-dimmest: color.adjust($blurple, $lightness: 30%);
+
+    $purple-strongest: color.adjust($purple, $lightness: -30%);
+    $purple-stronger: color.adjust($purple, $lightness: -10%);
+    $purple-dimmer: color.adjust($purple, $lightness: 10%);
+    $purple-dimmest: color.adjust($purple, $lightness: 30%);
+
+    $magenta-strongest: color.adjust($magenta, $lightness: -30%);
+    $magenta-stronger: color.adjust($magenta, $lightness: -10%);
+    $magenta-dimmer: color.adjust($magenta, $lightness: 10%);
+    $magenta-dimmest: color.adjust($magenta, $lightness: 30%);
+
+    $pink-strongest: color.adjust($pink, $lightness: -30%);
+    $pink-stronger: color.adjust($pink, $lightness: -10%);
+    $pink-dimmer: color.adjust($pink, $lightness: 10%);
+    $pink-dimmest: color.adjust($pink, $lightness: 30%);
+
+    $grey-strongest: color.adjust($grey, $lightness: -30%);
+    $grey-stronger: color.adjust($grey, $lightness: -10%);
+    $grey-dimmer: color.adjust($grey, $lightness: 10%);
+    $grey-dimmest: color.adjust($grey, $lightness: 30%);
   }
 
   &.replit-ui-theme-root {
@@ -100,5 +232,79 @@
     -webkit---accent-negative-dimmer: #{$negative-dimmer};
     --accent-negative-dimmer: #{$negative-dimmer};
     --accent-negative-dimmest: #{$negative-dimmest};
+
+    --accent-red-dimmest: #{$red-dimmest};
+    --accent-red-dimmer: #{$red-dimmer};
+    --accent-red-default: #{$red-default};
+    --accent-red-stronger: #{$red-stronger};
+    --accent-red-strongest: #{$red-strongest};
+
+    --accent-orange-dimmest: #{$orange-dimmest};
+    --accent-orange-dimmer: #{$orange-dimmer};
+    --accent-orange-default: #{$orange-default};
+    -webkit---accent-orange-stronger: #{$orange-stronger};
+    --accent-orange-stronger: #{$orange-stronger};
+    --accent-orange-strongest: #{$orange-strongest};
+
+    --accent-yellow-dimmest: #{$yellow-dimmest};
+    --accent-yellow-dimmer: #{$yellow-dimmer};
+    --accent-yellow-default: #{$yellow-default};
+    -webkit---accent-yellow-stronger: #{$yellow-stronger};
+    --accent-yellow-stronger: #{$yellow-stronger};
+    --accent-yellow-strongest: #{$yellow-strongest};
+
+    --accent-green-dimmest: #{$green-dimmest};
+    --accent-green-dimmer: #{$green-dimmer};
+    --accent-green-default: #{$green-default};
+    --accent-green-stronger: #{$green-stronger};
+    -webkit---accent-green-strongest: #{$green-strongest};
+    --accent-green-strongest: #{$green-strongest};
+
+    --accent-teal-dimmest: #{$teal-dimmest};
+    --accent-teal-dimmer: #{$teal-dimmer};
+    --accent-teal-default: #{$teal-default};
+    --accent-teal-stronger: #{$teal-stronger};
+    --accent-teal-strongest: #{$teal-strongest};
+
+    --accent-blue-dimmest: #{$blue-dimmest};
+    --accent-blue-dimmer: #{$blue-dimmer};
+    --accent-blue-default: #{$blue-default};
+    --accent-blue-stronger: #{$blue-stronger};
+    --accent-blue-strongest: #{$blue-strongest};
+
+    -webkit---accent-blurple-dimmest: #{$blurple-dimmest};
+    --accent-blurple-dimmest: #{$blurple-dimmest};
+    --accent-blurple-dimmer: #{$blurple-dimmer};
+    -webkit---accent-blurple-default: #{$blurple-default};
+    --accent-blurple-default: #{$blurple-default};
+    --accent-blurple-stronger: #{$blurple-stronger};
+    --accent-blurple-strongest: #{$blurple-strongest};
+
+    --accent-purple-dimmest: #{$purple-dimmest};
+    --accent-purple-dimmer: #{$purple-dimmer};
+    --accent-purple-default: #{$purple-default};
+    -webkit---accent-purple-stronger: #{$purple-stronger};
+    --accent-purple-stronger: #{$purple-stronger};
+    --accent-purple-strongest: #{$purple-strongest};
+
+    -webkit---accent-magenta-dimmest: #{$magenta-dimmest};
+    --accent-magenta-dimmest: #{$magenta-dimmest};
+    --accent-magenta-dimmer: #{$magenta-dimmer};
+    -webkit---accent-magenta-default: #{$magenta-default};
+    --accent-magenta-default: #{$magenta-default};
+    --accent-magenta-stronger: #{$magenta-stronger};
+    --accent-magenta-strongest: #{$magenta-strongest};
+
+    --accent-pink-dimmest: #{$pink-dimmest};
+    --accent-pink-dimmer: #{$pink-dimmer};
+    --accent-pink-default: #{$pink-default};
+    --accent-pink-stronger: #{$pink-stronger};
+    --accent-pink-strongest: #{$pink-strongest};
+
+    --accent-grey-dimmest: #{$grey-dimmest};
+    --accent-grey-dimmer: #{$grey-dimmer};
+    --accent-grey-default: #{$grey-default};
+    --accent-grey-stronger: #{$grey-stronger};
+    --accent-grey-strongest: #{$grey-strongest};
   }
 }
