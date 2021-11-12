@@ -1,0 +1,62 @@
+@use "../src/mixins";
+
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord2: #434c5e;
+$nord3: #4c566a;
+$nord4: #d8dee9;
+$nord5: #e5e9f0;
+$nord6: #eceff4;
+$nord7: #8fbcbb;
+$nord8: #88c0d0;
+$nord9: #81a1c1;
+$nord10: #5e81ac;
+$nord11: #bf616a;
+$nord12: #d08770;
+$nord13: #ebcb8b;
+$nord14: #a3be8c;
+$nord15: #b48ead;
+
+.light {
+  @include mixins.light-replit-theme(
+    $background: $nord6,
+    $foreground: $nord0,
+    $outline: $nord2,
+    $primary: $nord8,
+    $positive: $nord14,
+    $negative: $nord11,
+    $red: $nord11,
+    $orange: $nord12,
+    $yellow: $nord13,
+    $green: $nord14,
+    $teal: $nord8,
+    $blue: $nord10,
+    $blurple: $nord9,
+    $purple: $nord15,
+    $magenta: $nord15,
+    $pink: $nord15,
+    $grey: $nord3
+  );
+}
+
+.dark {
+  @include mixins.dark-replit-theme(
+    $background: $nord0,
+    $foreground: $nord6,
+    $outline: $nord2,
+    $primary: $nord8,
+    $positive: $nord14,
+    $negative: $nord11,
+    $red: $nord11,
+    $orange: $nord12,
+    $yellow: $nord13,
+    $green: $nord14,
+    $teal: $nord8,
+    $blue: $nord10,
+    $blurple: $nord9,
+    $purple: $nord15,
+    $magenta: $nord15,
+    $pink: $nord15,
+    $grey: $nord3
+  );
+}
